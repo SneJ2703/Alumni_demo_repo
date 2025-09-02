@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Connect - Student Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="student_dashboard.css">
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="logo-section">
+            <button class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="logo">
+                <div class="logo-icon">AU</div>
+                <span class="logo-text">Alumni Connect</span>
+            </div>
+        </div>
+        
+        <div class="header-right">
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search alumni, events...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <button class="notification-icon">
+                <i class="fas fa-bell"></i>
+                <span class="notification-badge">1</span>
+            </button>
+            <div class="user-info">
+                <div class="user-avatar">🎓</div>
+                <span class="user-name">student demo</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <a href="student_dashboard.html" class="nav-item active">
+                <i class="fas fa-th-large"></i>
+                Dashboard
+            </a>
+            <a href="student_directory.html" class="nav-item">
+                <i class="fas fa-users"></i>
+                Alumni Directory
+            </a>
+            <a href="student_events.html" class="nav-item">
+                <i class="fas fa-calendar"></i>
+                Events
+            </a>
+            <a href="students_forum.html" class="nav-item">
+                <i class="fas fa-comments"></i>
+                Forums
+            </a>
+            <a href="students_mentor.html" class="nav-item">
+                <i class="fas fa-handshake"></i>
+                Mentorship
+            </a>
+            <a href="students_career.html" class="nav-item">
+                <i class="fas fa-briefcase"></i>
+                Career Center
+            </a>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="welcome-section">
+                <h1 class="welcome-title">Welcome back, student!</h1>
+                <p class="welcome-subtitle">Here's what's happening in your alumni network</p>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Total Alumni</span>
+                        <div class="stat-icon blue">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="stat-number">1</div>
+                    <div class="stat-description">Registered in the platform</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Upcoming Events</span>
+                        <div class="stat-icon green">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                    </div>
+                    <div class="stat-number">0</div>
+                    <div class="stat-description">This month</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">New Messages</span>
+                        <div class="stat-icon orange">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="stat-number">0</div>
+                    <div class="stat-description">Unread messages</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Job Opportunities</span>
+                        <div class="stat-icon teal">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                    </div>
+                    <div class="stat-number">0</div>
+                    <div class="stat-description">Active postings</div>
+                </div>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="content-grid">
+                <!-- Recent Activity -->
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <i class="fas fa-bell section-icon"></i>
+                            Recent Activity
+                        </h2>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-dot blue"></div>
+                            <div class="activity-content">
+                                <h4>New alumni registration</h4>
+                                <p>Sarah Johnson (Class of 2020) joined</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-dot green"></div>
+                            <div class="activity-content">
+                                <h4>Upcoming event reminder</h4>
+                                <p>Annual Alumni Gala • 2 weeks away</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-dot orange"></div>
+                            <div class="activity-content">
+                                <h4>New mentorship match</h4>
+                                <p>You've been matched with a student</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Quick Actions</h2>
+                    </div>
+                    <div class="actions-list">
+                        <div class="actions-grid">
+                            <div class="action-card blue">
+                                <div class="action-icon blue">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="action-text">Find Alumni</div>
+                            </div>
+                            <div class="action-card green">
+                                <div class="action-icon green">
+                                    <i class="fas fa-calendar-plus"></i>
+                                </div>
+                                <div class="action-text">View Events</div>
+                            </div>
+                            <div class="action-card orange">
+                                <div class="action-icon orange">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="action-text">Connect</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="student_dashboard.js"></script>
+</body>
+</html>

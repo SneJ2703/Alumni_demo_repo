@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Connect - Mentorship</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="students_mentor.css">
+</head>
+<body>
+     <!-- Top Header -->
+    <div class="top-header">
+        <div class="logo-section">
+            <button class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="logo">
+                <div class="logo-icon">AU</div>
+                <span class="logo-text">Alumni Connect</span>
+            </div>
+        </div>
+        
+        <div class="header-right">
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search alumni, events...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <button class="notification-icon">
+                <i class="fas fa-bell"></i>
+                <span class="notification-badge">1</span>
+            </button>
+            <div class="user-info">
+                <div class="user-avatar">🎓</div>
+                <span class="user-name">student demo</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <a href="student_dashboard.html" class="nav-item">
+                <i class="fas fa-th-large"></i>
+                Dashboard
+            </a>
+            <a href="student_directory.html" class="nav-item">
+                <i class="fas fa-users"></i>
+                Alumni Directory
+            </a>
+            <a href="student_events.html" class="nav-item">
+                <i class="fas fa-calendar-alt"></i>
+                Events
+            </a>
+            <a href="students_forum.html" class="nav-item">
+                <i class="fas fa-comments"></i>
+                Forums
+            </a>
+            <a href="students_mentor.html" class="nav-item active">
+                <i class="fas fa-user-graduate"></i>
+                Mentorship
+            </a>
+            <a href="students_career.html" class="nav-item">
+                <i class="fas fa-briefcase"></i>
+                Career Center
+            </a>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+              <input type="text" placeholder="Search alumni, events...">
+            </header>
+      
+            <section class="welcome">
+              <h1>Welcome back, student!</h1>
+              <p>Here's what's happening in your alumni network</p>
+            </section>
+      
+            <!-- Cards -->
+            <section class="cards">
+              <div class="card"> 
+                <h3>Total Alumni</h3>
+                <p id="alumniCount">1</p>
+              </div>
+              <div class="card">
+                <h3>Upcoming Events</h3>
+                <p id="eventCount">0</p>
+              </div>
+              <div class="card">
+                <h3>New Messages</h3>
+                <p id="messageCount">0</p>
+              </div>
+              <div class="card">
+                <h3>Job Opportunities</h3>
+                <p id="jobCount">0</p>
+              </div>
+            </section>
+      
+            <!-- Activity & Quick Actions -->
+            <section class="activity-actions">
+              <div class="activity">
+                <h2>Recent Activity</h2>
+                <ul>
+                  <li>🔵 New alumni registration</li>
+                  <li>🟢 Upcoming event reminder</li>
+                  <li>🟠 New mentorship match</li>
+                </ul>
+              </div>
+      
+              <div class="quick-actions">
+                <h2>Quick Actions</h2>
+                <button onclick="findAlumni()">Find Alumni</button>
+                <button onclick="viewEvents()">View Events</button>
+                <button onclick="connect()">Connect</button>
+              </div>
+            </section>
+          </main>
+    </div>
+
+    <script src="students_mentor.js"></script>
+</body>
+</html>

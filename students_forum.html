@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Connect - Forums</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="students_forum.css">
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="logo-section">
+            <button class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="logo">
+                <div class="logo-icon">AU</div>
+                <span class="logo-text">Alumni Connect</span>
+            </div>
+        </div>
+        
+        <div class="header-right">
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search alumni, events...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <button class="notification-icon">
+                <i class="fas fa-bell"></i>
+                <span class="notification-badge">1</span>
+            </button>
+            <div class="user-info">
+                <div class="user-avatar">🎓</div>
+                <span class="user-name">student demo</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <a href="student_dashboard.html" class="nav-item">
+                <i class="fas fa-th-large"></i>
+                Dashboard
+            </a>
+            <a href="student_directory.html" class="nav-item">
+                <i class="fas fa-users"></i>
+                Alumni Directory
+            </a>
+            <a href="student_events.html" class="nav-item">
+                <i class="fas fa-calendar-alt"></i>
+                Events
+            </a>
+            <a href="students_forum.html" class="nav-item active">
+                <i class="fas fa-comments"></i>
+                Forums
+            </a>
+            <a href="students_mentor.html" class="nav-item">
+                <i class="fas fa-user-graduate"></i>
+                Mentorship
+            </a>
+            <a href="students_career.html" class="nav-item">
+                <i class="fas fa-briefcase"></i>
+                Career Center
+            </a>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="welcome-section">
+                <h1 class="welcome-title">Forums</h1>
+                <p class="welcome-subtitle">Join discussions and share your thoughts</p>
+            </div>
+
+            <!-- Forum Categories -->
+            <section class="cards">
+                <a href="#general" class="card">
+                    <i class="fas fa-comments card-icon"></i>
+                    <div class="card-content">
+                        <h2>General Discussions</h2>
+                        <p>Share updates, ask questions, and discuss anything alumni-related.</p>
+                        <span class="tag">120 Topics</span>
+                    </div>
+                </a>
+
+                <a href="#career" class="card">
+                    <i class="fas fa-briefcase card-icon"></i>
+                    <div class="card-content">
+                        <h2>Career Advice</h2>
+                        <p>Get tips from alumni about jobs, industries, and opportunities.</p>
+                        <span class="tag">85 Topics</span>
+                    </div>
+                </a>
+
+                <a href="#education" class="card">
+                    <i class="fas fa-graduation-cap card-icon"></i>
+                    <div class="card-content">
+                        <h2>Higher Studies</h2>
+                        <p>Discuss masters, PhDs, universities, and application tips.</p>
+                        <span class="tag">50 Topics</span>
+                    </div>
+                </a>
+
+                <a href="#tech" class="card">
+                    <i class="fas fa-microchip card-icon"></i>
+                    <div class="card-content">
+                        <h2>Tech & Innovation</h2>
+                        <p>Talk about new technologies, startups, and research ideas.</p>
+                        <span class="tag">72 Topics</span>
+                    </div>
+                </a>
+            </section>
+
+            <!-- Recent Posts Section -->
+            <section class="recent">
+                <h2>Recent Activity</h2>
+                <ul>
+                  <li><strong>Riya Sharma</strong> replied in <em>Career Advice</em> – "Tips for Resume Building"</li>
+                  <li><strong>Amit Verma</strong> started a topic in <em>General Discussions</em> – "Alumni Meetup 2025"</li>
+                  <li><strong>Sneha Patra</strong> replied in <em>Tech & Innovation</em> – "AI Tools for Students"</li>
+                </ul>
+              </section>
+        </main>
+    </div>
+
+    <script src="students_forum.js"></script>
+</body>
+</html>
